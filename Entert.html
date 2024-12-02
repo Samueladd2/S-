@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entertainment</title>
+        <link href="Entert.css" rel="stylesheet">
+        <script src="fixDepJS.js"></script>
+        <style type="text/css">
+            #header h1{
+                font-size: 40px;
+                min-width: 210px;
+            }
+        </style>
+    </head>
+
+    <body onload="load();">
+        <div id="header">
+            <h1>
+            Bonwire Senoir High School</h1>
+            <a href="index.html"><img src="/logo.png" alt="website for the school"
+                    title="website for the school"></a>
+        </div>
+        <div>
+            <h1>Sing in to get Today's news</h1>
+            <form method="post">
+                <input type="text" id="PHONE NUMBER OR G-MAIL"  placeholder="ENTER YOUR PHONE NUMBER OR G-MAIL" onblur="return validAcc();"><br />
+                <input type="password" name="psw" maxlength="8" placeholder="INPUT YOUR PASSWORD"><br />
+                <label> <tooltip>Enter the Details to log in</tooltip></label><br />
+                <select name="status">
+                    <option value="STUDENT">STUDENT</option>
+                    <option value="TUTOR" selected>TUTOR</option>
+                </select><br/>
+                <input type="text" id="cardno" maxlength="16" placeholder="ENTER YOUR STUDENT OR TUTOR'S ID" onblur="return validCard();"><br />
+                <input type="text" id="name" placeholder="RE-TYPE"><br />
+                <input type="password" maxlength="3" id="cvv" placeholder="Enter your 3-digit CVV:" onblur="right();"><br />
+                <p id="result"></p>
+                <button type="button" id="paybtn" onclick="goto();">Deposit</button>
+            </form>
+        </div>
+    </body>
+
+</html>

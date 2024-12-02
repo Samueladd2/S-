@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Internet Banking | Online Banking Website</title>
+        <link rel="stylesheet" href="./trans.css">
+        <script src="./perIntBankJS.js"></script>
+    </head>
+
+    <body onload="load();">
+        <div id="header">
+            <h1>Online Banking Website</h1>
+            <a href="index.html"><img src="./logo.png" alt="Online Banking Website"
+                    title="Online Banking Website"></a>
+            
+        </div>
+        <div id="menu">
+            <h1>Cheacking of payment have now improved</h1>
+            <form method="POST">
+                <input type="number" min="0" max="16" name="accno" id="accno" size="16"
+                    placeholder="Enter the Account Number of the Reciever:"><br />
+                <input type="number" min="0" max="2000" name="amnt" id="amnt"
+                    placeholder="Enter the amount to send:"><br />
+                <p id="error"></p>
+                <button type="button" id="submitbtn" onclick="goto();">Submit</button>
+            </form>
+        </div>
+        <section>
+            <div class="container">
+                <div class="pic">
+                    <img class="pic1" src="C:\Users\SURMOIL\Desktop\Online-Banking-Website\Images\logo.png"/>  
+                </div>
+                About this project
+            </div>
+        </section>
+    </body>
+
+</html>

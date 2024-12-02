@@ -1,0 +1,11 @@
+@import url("./homeCSS.css");
+#on{
+    height:500px;
+    width:700px;
+    border-radius:30px;
+    background-size: 700px 500px;
+    margin:30px auto;
+}
+    body{
+    background-image: url(C:\Users\SURMOIL\Desktop\Online-Banking-Website\S-DEV\download.jpeg);
+    } 
